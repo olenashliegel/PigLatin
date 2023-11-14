@@ -19,3 +19,7 @@ Expected Output: "acvway addway ertway ertway iuiway"
 Test: "It will move all of the first consecutive consonants to the end and add "ay" to the end of words that begin with a consonant."
 Code: pigLatin("ba bba");
 Expected Output: "abay abbay"
+
+Test: "It  will add "ay" to the end of all words that consist of only one consonant letter"
+Code: pigLatin("b b");
+Expected Output: "bay bay"

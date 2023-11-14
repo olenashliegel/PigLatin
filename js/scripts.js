@@ -6,6 +6,8 @@ function pigLatin(text) {
   textArray.forEach(function (word) {
     if (vowels.includes(word.charAt(0))) {
       resultArray.push(word + "way");
+    } else if (word.length === 1 && consonants.includes(word.charAt(0))) {
+      resultArray.push(word + "ay");
     }
     else {
       let resultWord = word;
@@ -27,4 +29,5 @@ function pigLatin(text) {
 //console.log(pigLatin("A"));
 //console.log(pigLatin("A a E e I"));
 //console.log(pigLatin("Acv add Ert ert Iui"));
-console.log(pigLatin("ba bba"));
+console.log(pigLatin("b b b b a a a ba bbaa "));
+console.log(pigLatin("b b"));
